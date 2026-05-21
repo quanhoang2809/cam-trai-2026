@@ -61,22 +61,35 @@
     </header>
 
     <!-- NAVIGATION TABS -->
-    <nav class="bg-white border-b border-emerald-100 sticky top-0 z-40 shadow-sm overflow-x-auto">
-        <div class="max-w-6xl mx-auto flex justify-around md:justify-center md:gap-8 px-4 py-1 min-w-[600px]">
-            <button onclick="switchTab('tong-quan')" id="tab-tong-quan" class="nav-tab py-4 px-4 font-bold text-sm flex items-center gap-2 border-b-2 border-emerald-600 text-emerald-600 transition-all">
-                <i class="fa-solid fa-circle-info"></i> Tổng Quan
-            </button>
-            <button onclick="switchTab('chuan-bi')" id="tab-chuan-bi" class="nav-tab py-4 px-4 font-bold text-sm flex items-center gap-2 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 transition-all">
-                <i class="fa-solid fa-clipboard-list"></i> Lịch Chuẩn Bị
-            </button>
-            <button onclick="switchTab('nhan-su')" id="tab-nhan-su" class="nav-tab py-4 px-4 font-bold text-sm flex items-center gap-2 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 transition-all">
-                <i class="fa-solid fa-users-gear"></i> Phân Ban & Chia Đội
-            </button>
-            <button onclick="switchTab('lich-trinh')" id="tab-lich-trinh" class="nav-tab py-4 px-4 font-bold text-sm flex items-center gap-2 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 transition-all">
-                <i class="fa-solid fa-compass-drafting"></i> Chương Trình Chi Tiết
-            </button>
-        </div>
-    </nav>
+<nav class="bg-white border-b border-emerald-100 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-6xl mx-auto grid grid-cols-4">
+        
+        <button onclick="switchTab('tong-quan')" id="tab-tong-quan" 
+            class="nav-tab py-3 px-1 font-bold text-[11px] sm:text-sm flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 border-b-2 border-emerald-600 text-emerald-600 transition-all">
+            <i class="fa-solid fa-circle-info text-base"></i>
+            <span>Tổng<br class="sm:hidden"> Quan</span>
+        </button>
+
+        <button onclick="switchTab('chuan-bi')" id="tab-chuan-bi" 
+            class="nav-tab py-3 px-1 font-bold text-[11px] sm:text-sm flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 transition-all">
+            <i class="fa-solid fa-clipboard-list text-base"></i>
+            <span>Chuẩn<br class="sm:hidden"> Bị</span>
+        </button>
+
+        <button onclick="switchTab('nhan-su')" id="tab-nhan-su" 
+            class="nav-tab py-3 px-1 font-bold text-[11px] sm:text-sm flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 transition-all">
+            <i class="fa-solid fa-users-gear text-base"></i>
+            <span>Chia<br class="sm:hidden"> Đội</span>
+        </button>
+
+        <button onclick="switchTab('lich-trinh')" id="tab-lich-trinh" 
+            class="nav-tab py-3 px-1 font-bold text-[11px] sm:text-sm flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 transition-all">
+            <i class="fa-solid fa-compass-drafting text-base"></i>
+            <span>Lịch<br class="sm:hidden"> Trình</span>
+        </button>
+
+    </div>
+</nav>
 
     <!-- MAIN CONTENT -->
     <main class="flex-grow max-w-6xl w-full mx-auto px-4 mt-6">
