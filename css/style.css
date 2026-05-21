@@ -1,0 +1,10 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.camp-bg {
+    background-color: #f3f8f2;
+    background-image: radial-gradient(#2e7d32 0.5px, transparent 0.5px), radial-gradient(#2e7d32 0.5px, #f3f8f2 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-opacity: 0.05;
+}
