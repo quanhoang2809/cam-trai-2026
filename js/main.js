@@ -87,9 +87,6 @@ function updateCountdown() {
     document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
 }
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
-
 
 // --- LOGIC PHÂN CHIA ĐỘI TƯƠNG TÁC (CẬP NHẬT MỚI) ---
 const initialMembers = ["Nguyên 1", "Nguyên 2", "Tuấn Anh", "Duyên", "Uyên 1", "Uyên 2", "Ly", "Thiên", "Yến", "Giao", "Nhi", "Hân", "Ân (nữ)"];
@@ -203,7 +200,47 @@ function resetCustomAssignment() {
     renderTeamMembers();
 }
 
-    // Khởi chạy lúc nạp trang
-window.onload = function() {
-    resetCustomAssignment();
-};
+// Load các phần HTML nhỏ vào index.html
+async function loadComponent(containerId, filePath) {
+    const container = document.getElementById(containerId);
+
+    if (!container) {
+        console.error("Không tìm thấy container:", containerId);
+        return;
+    }
+
+    const response = await fetch(filePath);
+
+    if (!response.ok) {
+        throw new Error("Không tải được file: " + filePath);
+    }
+
+    container.innerHTML = await response.text();
+}
+
+// Khởi chạy website sau khi load xong HTML
+async function initWebsite() {
+    try {
+        await Promise.all([
+            loadComponent("header-container", "./components/header.html"),
+            loadComponent("nav-container", "./components/nav.html"),
+            loadComponent("tong-quan-container", "./sections/tong-quan.html"),
+            loadComponent("chuan-bi-container", "./sections/chuan-bi.html"),
+            loadComponent("nhan-su-container", "./sections/nhan-su.html"),
+            loadComponent("lich-trinh-container", "./sections/lich-trinh.html"),
+            loadComponent("footer-container", "./components/footer.html"),
+            loadComponent("modal-container", "./components/modal.html")
+        ]);
+
+        // Sau khi HTML đã được load xong thì mới chạy các chức năng
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        resetCustomAssignment();
+
+    } catch (error) {
+        console.error("Lỗi khi load giao diện:", error);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", initWebsite);

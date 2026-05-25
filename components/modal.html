@@ -1,0 +1,26 @@
+<!-- BAN DETAIL MODAL -->
+<div id="ban-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl transform scale-95 transition-transform duration-300">
+        <div class="flex justify-between items-start mb-4">
+            <h3 id="modal-title" class="text-xl font-bold text-slate-800">Tên Phân Ban</h3>
+            <button onclick="closeBanModal()" class="text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+        <div class="space-y-3">
+            <p class="text-sm">
+                <strong class="text-slate-700">Số lượng:</strong> 
+                <span id="modal-size" class="text-emerald-600 font-semibold ml-1">...</span>
+            </p>
+            <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
+                <strong class="block text-slate-700 text-sm mb-1">Trách nhiệm:</strong>
+                <p id="modal-desc" class="text-xs text-slate-600 leading-relaxed">...</p>
+            </div>
+        </div>
+        <div class="mt-6 text-right">
+            <button onclick="closeBanModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-5 rounded-lg text-sm transition-all shadow-sm">
+                Đóng
+            </button>
+        </div>
+    </div>
+</div>

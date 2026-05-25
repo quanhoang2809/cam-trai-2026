@@ -1,0 +1,244 @@
+<!-- TAB 4: CHƯƠNG TRÌNH CHI TIẾT -->
+<section id="content-lich-trinh" class="tab-content hidden space-y-6">
+    <!-- Selector ngày -->
+    <div class="flex justify-center gap-4 bg-emerald-100 p-1.5 rounded-xl max-w-sm mx-auto">
+        <button onclick="switchDay(1)" id="day-tab-1" class="w-1/2 py-2.5 px-4 font-bold text-sm rounded-lg bg-emerald-600 text-white shadow-sm transition-all">
+            Ngày 1 (Thứ Bảy)
+        </button>
+        <button onclick="switchDay(2)" id="day-tab-2" class="w-1/2 py-2.5 px-4 font-bold text-sm rounded-lg text-slate-600 hover:text-emerald-700 transition-all">
+            Ngày 2 (Chúa Nhật)
+        </button>
+    </div>
+
+    <!-- NGÀY 1 -->
+    <div id="day-content-1" class="day-view block space-y-4">
+        <div class="bg-white rounded-2xl shadow-sm border border-emerald-100 overflow-hidden">
+            <div class="bg-emerald-600 text-white p-4 font-bold flex items-center justify-between">
+                <span><i class="fa-regular fa-sun mr-2"></i> LỊCH TRÌNH NGÀY 1 (18/07/2026)</span>
+                <span class="text-xs bg-emerald-800 px-3 py-1 rounded">Thứ Bảy</span>
+            </div>
+            <div class="divide-y divide-emerald-50">
+                <!-- Hoạt động -->
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">07h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Tập trung</h4>
+                        <p class="text-slate-500 text-sm mt-1">Tập trung toàn bộ trại sinh, điểm danh, khuấy động lấy tinh thần, phổ biến thủ tục chuẩn bị nhập trại.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">08h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Nhập trại</h4>
+                        <p class="text-slate-500 text-sm mt-1">Các đội tập hợp hàng ngũ chỉnh tề theo sự hướng dẫn, chuẩn bị sẵn sàng cho nhập trại.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">09h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Khai mạc trại</h4>
+                        <p class="text-slate-500 text-sm mt-1">Tuyên bố lý do chính thức, giới thiệu thành phần trại cùng đại biểu và công bố chủ đề trại hè.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">09h30 - 11h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Trò chơi vận động</h4>
+                        <p class="text-slate-500 text-sm mt-1">Các trò chơi ngoài trời sôi nổi nhằm khơi dậy sức trẻ và gắn kết tinh thần đồng đội giữa các trại sinh.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">11h30 - 13h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Dựng lều + Ăn trưa</h4>
+                        <p class="text-slate-500 text-sm mt-1">Các đội tiến hành thực hành kỹ năng dựng lều trại. Cả đội ăn trưa gắn kết và nghỉ ngơi tự do ngay tại lều.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">13h00 - 14h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Thi Giáo Lý</h4>
+                        <p class="text-slate-500 text-sm mt-1">Bắt đầu phần thi tìm hiểu kiến thức Kinh Thánh và Giáo Lý.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">14h00 - 16h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Nghỉ ngơi & Chuẩn bị lễ</h4>
+                        <p class="text-slate-500 text-sm mt-1">Khoảng thời gian vệ sinh cá nhân, nghỉ ngơi lấy lại năng lượng, chuẩn bị tinh thần và tập hát phụng vụ cho Thánh Lễ.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">16h00 - 17h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">THÁNH LỄ NGOÀI GIỜ</h4>
+                        <p class="text-slate-500 text-sm mt-1">Thánh Lễ thay CN dành riêng cho thiếu nhi.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">17h00 - 18h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Ăn tối + Dọn dẹp</h4>
+                        <p class="text-slate-500 text-sm mt-1">Tiến hành thu gỡ lều tạm, tập trung di chuyển xuống khu vực nghĩa trang ăn tối.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">18h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Khởi hành về nhà thờ</h4>
+                        <p class="text-slate-500 text-sm mt-1">Thực hiện hóa trang theo đội, sắp xếp đội hình di chuyển an toàn quay trở về nhà thờ.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">19h00 - 21h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Đêm Lửa Trại</h4>
+                        <p class="text-slate-500 text-sm mt-1">Nghi thức gọi lửa thiêng liêng, tiếp nối là phần trình diễn các tiết mục văn nghệ đặc sắc từ các đội và trò chơi sinh hoạt.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">21h00 - 21h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Mang lửa về tim</h4>
+                        <p class="text-slate-500 text-sm mt-1">Nghi thức lắng đọng cuối ngày, chia sẻ tâm tình chân thành bên ánh lửa hồng tàn. KẾT THÚC NGÀY 1 (Thiếu nhi ra về an toàn).</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-teal-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4 bg-teal-50/20">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">21h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-teal-800 text-base">Hoạt động đêm của GLV (Dự kiến)</h4>
+                        <p class="text-slate-500 text-sm mt-1">Một chương trình giao lưu hoặc thử thách nhỏ ban đêm dành riêng cho Đội trưởng và Đội phó để tăng kết nối. Dọn dẹp củi lửa.</p>
+                    </div>
+                    <div class="text-xs text-teal-600 italic font-semibold">Chưa có</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NGÀY 2 -->
+    <div id="day-content-2" class="day-view hidden space-y-4">
+        <div class="bg-white rounded-2xl shadow-sm border border-emerald-100 overflow-hidden">
+            <div class="bg-teal-600 text-white p-4 font-bold flex items-center justify-between">
+                <span><i class="fa-regular fa-moon mr-2"></i> LỊCH TRÌNH NGÀY 2 (19/07/2026)</span>
+                <span class="text-xs bg-teal-800 px-3 py-1 rounded">Chúa Nhật</span>
+            </div>
+            <div class="divide-y divide-emerald-50">
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">06h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Tập trung tại nghĩa trang</h4>
+                        <p class="text-slate-500 text-sm mt-1">Hoạt động khởi động nhẹ nhàng bằng trò chơi nhỏ giúp các em lấy tinh thần sảng khoái đầu ngày (thay thế tập thể dục).</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">07h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Về nhà thờ</h4>
+                        <p class="text-slate-500 text-sm mt-1">Di chuyển trật tự, kỷ luật từ khu vực nghĩa trang trở lại khuôn viên đất trại chính tại nhà thờ.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">07h30 - 08h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Ăn sáng - Chụp hình lưu niệm</h4>
+                        <p class="text-slate-500 text-sm mt-1">Trại sinh dùng bữa sáng nhẹ phục hồi năng lượng và tranh thủ chụp hình lưu niệm chung toàn trại cũng như theo từng đội.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-amber-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">08h30 - 11h30</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">HÀNH TRÌNH LỚN</h4>
+                        <p class="text-slate-500 text-sm mt-1">Chạy mật thư.</p>
+                    </div>
+                    <div class="text-xs text-amber-600 font-semibold italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">11h30 - 13h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Dựng lều + Ăn trưa</h4>
+                        <p class="text-slate-500 text-sm mt-1">Dùng bữa trưa, thu dọn đồ đạc cá nhân ngăn nắp và nghỉ ngơi tự do hồi sức tại lều.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+
+                <div class="p-4 md:p-6 hover:bg-emerald-50/40 transition-colors flex flex-col md:flex-row md:items-center gap-4">
+                    <div class="md:w-32 flex-shrink-0">
+                        <span class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm block text-center">13h00 - 14h00</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-slate-800 text-base">Sinh hoạt chung + Bế mạc</h4>
+                        <p class="text-slate-500 text-sm mt-1">Sinh hoạt tập thể vui nhộn, công bố điểm thi đua và trao phần thưởng cho các đội xuất sắc, hạ lều, tổng dọn dẹp vệ sinh và nghi thức chia tay.</p>
+                    </div>
+                    <div class="text-xs text-slate-400 italic">Chưa có</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

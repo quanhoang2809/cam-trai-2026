@@ -1,0 +1,218 @@
+<!-- TAB 3: PHÂN BAN & CHIA ĐỘI -->
+<section id="content-nhan-su" class="tab-content hidden space-y-8">
+    
+    <!-- 1. SƠ ĐỒ PHÂN BAN BAN TỔ CHỨC (Đưa lên đầu) -->
+    <div>
+        <h2 class="text-xl font-bold text-slate-800 mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-users-viewfinder text-emerald-600"></i> Ban Tổ Chức
+        </h2>
+        <p class="text-slate-500 text-xs mb-4">Mẹo: Bấm chọn từng Ban dưới đây để xem chi tiết số lượng thành viên và trách nhiệm của Ban.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Ban 1 -->
+            <div onclick="openBanModal('Ban Đời sống - Truyền thông', '5 Thành viên', 'Phụ trách hành chính, quản lý tài chính, vận hành và chuẩn bị hệ thống âm thanh, ánh sáng cho toàn bộ khu trại, đồng thời thực hiện công tác ghi hình, chụp ảnh tư liệu và truyền thông chương trình trại.')" class="bg-white p-5 rounded-xl border border-emerald-100 hover:border-emerald-400 cursor-pointer transition-all shadow-sm flex items-start gap-4">
+                <div class="bg-blue-100 text-blue-700 p-3 rounded-lg"><i class="fa-solid fa-satellite-dish text-lg"></i></div>
+                <div>
+                    <h4 class="font-bold text-slate-800">Ban Đời sống & Truyền thông</h4>
+                    <span class="text-xs text-blue-600 font-semibold">5 Thành viên</span>
+                </div>
+            </div>
+            <!-- Ban 2 -->
+            <div onclick="openBanModal('Ban Sinh hoạt & Văn nghệ', '5 Thành viên', 'Phụ trách hoạt náo, điều phối các chương trình trò chơi vòng tròn, lên ý tưởng, kịch bản chương trình văn nghệ đêm lửa trại và tập dượt cho các tiết mục sinh hoạt chung.')" class="bg-white p-5 rounded-xl border border-emerald-100 hover:border-emerald-400 cursor-pointer transition-all shadow-sm flex items-start gap-4">
+                <div class="bg-pink-100 text-pink-700 p-3 rounded-lg"><i class="fa-solid fa-guitar text-lg"></i></div>
+                <div>
+                    <h4 class="font-bold text-slate-800">Ban Sinh hoạt & Văn nghệ</h4>
+                    <span class="text-xs text-pink-600 font-semibold">5 Thành viên</span>
+                </div>
+            </div>
+            <!-- Ban 3 -->
+            <div onclick="openBanModal('Ban Trò chơi & Kỹ thuật', '4 Thành viên', 'Lên ý tưởng cho trò chơi nhập trại, vận động. Làm cổng trại và làm các đạo cụ cần thiết cho chương trình trại.')" class="bg-white p-5 rounded-xl border border-emerald-100 hover:border-emerald-400 cursor-pointer transition-all shadow-sm flex items-start gap-4">
+                <div class="bg-orange-100 text-orange-700 p-3 rounded-lg"><i class="fa-solid fa-compass text-lg"></i></div>
+                <div>
+                    <h4 class="font-bold text-slate-800">Ban Trò chơi & Kỹ thuật</h4>
+                    <span class="text-xs text-orange-600 font-semibold">4 Thành viên </span>
+                </div>
+            </div>
+            <!-- Ban 4 -->
+            <div onclick="openBanModal('Ban Mật thư', '4 Thành viên', 'Lên ý tưởng, trò chơi cho Hành Trình Lớn.')" class="bg-white p-5 rounded-xl border border-emerald-100 hover:border-emerald-400 cursor-pointer transition-all shadow-sm flex items-start gap-4">
+                <div class="bg-purple-100 text-purple-700 p-3 rounded-lg"><i class="fa-solid fa-key text-lg"></i></div>
+                <div>
+                    <h4 class="font-bold text-slate-800">Ban Mật thư</h4>
+                    <span class="text-xs text-purple-600 font-semibold">4 Thành viên</span>
+                </div>
+            </div>
+            <!-- Ban 5 -->
+            <div onclick="openBanModal('Ban Phụng tự', '3 Thành viên', 'Phụ trách biên soạn nội dung thi Giáo lý, các buổi cầu nguyện, Thánh Lễ Ngoài Giờ.')" class="bg-white p-5 rounded-xl border border-emerald-100 hover:border-emerald-400 cursor-pointer transition-all shadow-sm flex items-start gap-4">
+                <div class="bg-yellow-100 text-yellow-700 p-3 rounded-lg"><i class="fa-solid fa-cloud-sun text-lg"></i></div>
+                <div>
+                    <h4 class="font-bold text-slate-800">Ban Phụng tự</h4>
+                    <span class="text-xs text-yellow-600 font-semibold">3 Thành viên</span>
+                </div>
+            </div>
+            <!-- Ban 6 -->
+            <div onclick="openBanModal('Ban Kỷ luật', '1 Thành viên', 'Đảm bảo trật tự, chấm điểm và an toàn chung trong suốt quá trình cắm trại, kiểm tra và nhắc nhở tinh thần chấp hành quy định, giờ giấc sinh hoạt và tác phong của từng trại sinh.')" class="bg-white p-5 rounded-xl border border-emerald-100 hover:border-emerald-400 cursor-pointer transition-all shadow-sm flex items-start gap-4">
+                <div class="bg-red-100 text-red-700 p-3 rounded-lg"><i class="fa-solid fa-shield-halved text-lg"></i></div>
+                <div>
+                    <h4 class="font-bold text-slate-800">Ban Kỷ luật</h4>
+                    <span class="text-xs text-red-600 font-semibold">1 Thành viên</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. PHÂN CHIA THÀNH VIÊN VÀO 6 ĐỘI (Giao diện mới tương tác linh hoạt) -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100 space-y-6">
+        <div>
+            <h2 class="text-xl font-bold text-slate-800 flex items-center gap-2">
+                <i class="fa-solid fa-crown text-amber-500"></i> Đội Trưởng
+            </h2>
+            <p class="text-xs text-slate-500 mt-1">
+                Hướng dẫn: Bấm vào một bạn ở **Danh Sách 13 Bạn Chưa Chia Đội**, sau đó bấm vào **nút gán** tại Đội trưởng bạn muốn chỉ định. 
+                Bạn cũng có thể xóa bạn đó ra khỏi đội bằng cách bấm vào dấu <i class="fa-solid fa-xmark text-red-500"></i> bên cạnh tên bạn ấy trong nhóm.
+            </p>
+        </div>
+
+        <!-- Danh sách 13 bạn còn lại -->
+        <div class="bg-emerald-50/70 p-4 rounded-xl border border-emerald-100 space-y-3">
+            <div class="flex justify-between items-center">
+                <h3 class="text-sm font-bold text-emerald-800 flex items-center gap-2">
+                    <i class="fa-solid fa-users"></i> Danh Sách 13 bạn bốc thăm:
+                </h3>
+                <span id="unassigned-count" class="bg-emerald-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">13</span>
+            </div>
+            <div id="unassigned-pool" class="flex flex-wrap gap-2">
+                <!-- Danh sách tên 13 bạn sẽ render bằng JS -->
+            </div>
+        </div>
+
+        <!-- 6 Đội Trưởng với ô lưu trữ thành viên động -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Đội 1 -->
+            <div class="bg-white p-4 rounded-xl border-2 border-amber-200/60 shadow-sm flex flex-col justify-between space-y-3 relative hover:border-amber-400 transition-all">
+                <div class="flex items-center gap-3 border-b border-amber-100 pb-2">
+                    <span class="w-10 h-10 rounded-full bg-amber-500 text-white font-bold text-sm flex items-center justify-center shadow-inner">TA</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Toma Hoàng Thiên Ân</h4>
+                        <span class="text-[10px] text-amber-600 font-semibold bg-amber-50 px-2 py-0.5 rounded-full">Đội trưởng 1</span>
+                    </div>
+                </div>
+                <div class="flex-grow space-y-2 min-h-[90px] bg-slate-50/50 p-2 rounded-lg border border-dashed border-slate-200">
+                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thành viên trong đội</span>
+                    <div id="team-list-1" class="space-y-1">
+                        <!-- Điền động -->
+                    </div>
+                </div>
+                <button onclick="assignToTeam(1)" class="w-full bg-amber-400 hover:bg-amber-300 text-slate-900 text-xs font-bold py-1.5 px-3 rounded-lg transition-all flex items-center justify-center gap-1 mt-2">
+                    <i class="fa-solid fa-plus"></i> Gán bạn đang chọn vào đội
+                </button>
+            </div>
+
+            <!-- Đội 2 -->
+            <div class="bg-white p-4 rounded-xl border-2 border-teal-200/60 shadow-sm flex flex-col justify-between space-y-3 relative hover:border-teal-400 transition-all">
+                <div class="flex items-center gap-3 border-b border-teal-100 pb-2">
+                    <span class="w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-sm flex items-center justify-center shadow-inner">HP</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Giuse Nguyễn Hữu Phát</h4>
+                        <span class="text-[10px] text-teal-600 font-semibold bg-teal-50 px-2 py-0.5 rounded-full">Đội trưởng 2</span>
+                    </div>
+                </div>
+                <div class="flex-grow space-y-2 min-h-[90px] bg-slate-50/50 p-2 rounded-lg border border-dashed border-slate-200">
+                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thành viên trong đội</span>
+                    <div id="team-list-2" class="space-y-1">
+                        <!-- Điền động -->
+                    </div>
+                </div>
+                <button onclick="assignToTeam(2)" class="w-full bg-teal-400 hover:bg-teal-300 text-slate-900 text-xs font-bold py-1.5 px-3 rounded-lg transition-all flex items-center justify-center gap-1 mt-2">
+                    <i class="fa-solid fa-plus"></i> Gán bạn đang chọn vào đội
+                </button>
+            </div>
+
+            <!-- Đội 3 -->
+            <div class="bg-white p-4 rounded-xl border-2 border-emerald-200/60 shadow-sm flex flex-col justify-between space-y-3 relative hover:border-emerald-400 transition-all">
+                <div class="flex items-center gap-3 border-b border-emerald-100 pb-2">
+                    <span class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold text-sm flex items-center justify-center shadow-inner">VH</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Toma Nguyễn Văn Hoài</h4>
+                        <span class="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">Đội trưởng 3</span>
+                    </div>
+                </div>
+                <div class="flex-grow space-y-2 min-h-[90px] bg-slate-50/50 p-2 rounded-lg border border-dashed border-slate-200">
+                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thành viên trong đội</span>
+                    <div id="team-list-3" class="space-y-1">
+                        <!-- Điền động -->
+                    </div>
+                </div>
+                <button onclick="assignToTeam(3)" class="w-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold py-1.5 px-3 rounded-lg transition-all flex items-center justify-center gap-1 mt-2">
+                    <i class="fa-solid fa-plus"></i> Gán bạn đang chọn vào đội
+                </button>
+            </div>
+
+            <!-- Đội 4 -->
+            <div class="bg-white p-4 rounded-xl border-2 border-sky-200/60 shadow-sm flex flex-col justify-between space-y-3 relative hover:border-sky-400 transition-all">
+                <div class="flex items-center gap-3 border-b border-sky-100 pb-2">
+                    <span class="w-10 h-10 rounded-full bg-sky-500 text-white font-bold text-sm flex items-center justify-center shadow-inner">QT</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Đaminh Trần Lê Quốc Thống</h4>
+                        <span class="text-[10px] text-sky-600 font-semibold bg-sky-50 px-2 py-0.5 rounded-full">Đội trưởng 4</span>
+                    </div>
+                </div>
+                <div class="flex-grow space-y-2 min-h-[90px] bg-slate-50/50 p-2 rounded-lg border border-dashed border-slate-200">
+                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thành viên trong đội</span>
+                    <div id="team-list-4" class="space-y-1">
+                        <!-- Điền động -->
+                    </div>
+                </div>
+                <button onclick="assignToTeam(4)" class="w-full bg-sky-400 hover:bg-sky-300 text-slate-900 text-xs font-bold py-1.5 px-3 rounded-lg transition-all flex items-center justify-center gap-1 mt-2">
+                    <i class="fa-solid fa-plus"></i> Gán bạn đang chọn vào đội
+                </button>
+            </div>
+
+            <!-- Đội 5 -->
+            <div class="bg-white p-4 rounded-xl border-2 border-slate-200/60 shadow-sm flex flex-col justify-between space-y-3 relative hover:border-slate-400 transition-all">
+                <div class="flex items-center gap-3 border-b border-slate-100 pb-2">
+                    <span class="w-10 h-10 rounded-full bg-slate-500 text-white font-bold text-sm flex items-center justify-center shadow-inner">T</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">(Dự Trưởng) Thịnh</h4>
+                        <span class="text-[10px] text-slate-600 font-semibold bg-slate-50 px-2 py-0.5 rounded-full">Đội trưởng 5</span>
+                    </div>
+                </div>
+                <div class="flex-grow space-y-2 min-h-[90px] bg-slate-50/50 p-2 rounded-lg border border-dashed border-slate-200">
+                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thành viên trong đội</span>
+                    <div id="team-list-5" class="space-y-1">
+                        <!-- Điền động -->
+                    </div>
+                </div>
+                <button onclick="assignToTeam(5)" class="w-full bg-slate-400 hover:bg-slate-300 text-slate-900 text-xs font-bold py-1.5 px-3 rounded-lg transition-all flex items-center justify-center gap-1 mt-2">
+                    <i class="fa-solid fa-plus"></i> Gán bạn đang chọn vào đội
+                </button>
+            </div>
+
+            <!-- Đội 6 -->
+            <div class="bg-white p-4 rounded-xl border-2 border-purple-200/60 shadow-sm flex flex-col justify-between space-y-3 relative hover:border-purple-400 transition-all">
+                <div class="flex items-center gap-3 border-b border-purple-100 pb-2">
+                    <span class="w-10 h-10 rounded-full bg-purple-500 text-white font-bold text-sm flex items-center justify-center shadow-inner">AB</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">(Dự Trưởng) Ân (Bi)</h4>
+                        <span class="text-[10px] text-purple-600 font-semibold bg-purple-50 px-2 py-0.5 rounded-full">Đội trưởng 6</span>
+                    </div>
+                </div>
+                <div class="flex-grow space-y-2 min-h-[90px] bg-slate-50/50 p-2 rounded-lg border border-dashed border-slate-200">
+                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Thành viên trong đội</span>
+                    <div id="team-list-6" class="space-y-1">
+                        <!-- Điền động -->
+                    </div>
+                </div>
+                <button onclick="assignToTeam(6)" class="w-full bg-purple-400 hover:bg-purple-300 text-slate-900 text-xs font-bold py-1.5 px-3 rounded-lg transition-all flex items-center justify-center gap-1 mt-2">
+                    <i class="fa-solid fa-plus"></i> Gán bạn đang chọn vào đội
+                </button>
+            </div>
+        </div>
+
+        <!-- Bảng điều khiển phụ -->
+        <div class="pt-4 flex justify-end gap-3">
+            <button onclick="resetCustomAssignment()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-1">
+                <i class="fa-solid fa-rotate-left"></i> Hoàn trả tất cả về danh sách chờ
+            </button>
+        </div>
+    </div>
+
+</section>
