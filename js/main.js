@@ -88,9 +88,6 @@ function updateCountdown() {
 }
 
 
-// --- LOGIC PHÂN CHIA ĐỘI TƯƠNG TÁC (CẬP NHẬT MỚI) ---
-const initialMembers = ["Nguyên 1", "Nguyên 2", "Tuấn Anh", "Duyên", "Uyên 1", "Uyên 2", "Ly", "Thiên", "Yến", "Giao", "Nhi", "Hân", "Ân (nữ)"];
-
 // Khởi tạo trạng thái rỗng cho các đội
 let customTeams = {
     1: [], 2: [], 3: [], 4: [], 5: [], 6: []
@@ -235,8 +232,6 @@ async function initWebsite() {
         // Sau khi HTML đã được load xong thì mới chạy các chức năng
         updateCountdown();
         setInterval(updateCountdown, 1000);
-
-        resetCustomAssignment();
 
     } catch (error) {
         console.error("Lỗi khi load giao diện:", error);
